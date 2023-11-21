@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEB DESIGN</title>
+    <style>
+body 
+	{
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333; /* Dark grey text */
+        }
+	    header 
+	{
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: green;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav 
+	{
+            background-color: dark green; /* Darker green navigation background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #ecf0f1; /* Light grey text */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1d6fa5; /* Darker blue on hover */
+        }
+	.container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 70px;
+        }
+
+        #form-container {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+        }
+
+        button {
+            background-color:red;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d35400; /* Darker orange on hover */
+        }
+
+        hr {
+            width: 70%;
+            border: 1px solid #bdc3c7;
+        }
+
+        h3 {
+            color: ; brown;
+            margin-top: 30px;
+        }
+
+        .content-section {
+            margin-top: 20px;
+        }
+
+        .content-text {
+            line-height: 1.6;
+        }
+
+        .content-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #3498db;
+        }
+	marquee 
+	{
+            color: black; 
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 align="center" style="color:red;">CHANDIGARH UNIVERSITY</h1>
+    </table>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<div>
+    <br>.<br>.<br>.<br>.<br>
+</div>
+<div class="container">
+    <div id="form-container">
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+
+            <label for="Tempid">TEMPORARY ID:</label>
+            <input type="text" id="Tempid" name="Tempid" required placeholder="Temporary ID">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Username">
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+</div>
+<script>
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var Tempid = document.getElementById("Tempid").value;
+        var username = document.getElementById("username").value;
+
+        // You can add further processing or validation here
+        // For simplicity, we'll just log the values to the console
+        console.log("Name: " + name);
+        console.log("Temporary ID: " + Tempid);
+        console.log("Username: " + username);
+    }
+</script>
+<marquee>SCROLL DOWN FOR MORE DETAILS</marquee>
+<hr><br>
+<h3>ABOUT CHANDIGARH UNIVERSITY</h3>
+<p>"Chandigarh University is a private university located in Mohali, near Chandigarh in Punjab, India. Established in 2012 by the Punjab State Legislature, it has quickly grown into one of the leading universities in the region."</p>
+<div class="content-section">
+    <h3>1. Academic Programs</h3>
+    <p class="content-text">
+        Chandigarh University offers a diverse range of academic programs, catering to various disciplines such as engineering, business management, computer applications, law, pharmacy, biotechnology, and more.
+    </p>
+</div>
+<div class="content-section">
+    <h3>2. Infrastructure</h3>
+    <p class="content-text">
+        The university is known for its modern infrastructure and state-of-the-art facilities. Well-equipped classrooms, advanced laboratories, extensive libraries, and recreational areas contribute to a conducive learning environment.
+    </p>
+</div>
+<div class="content-section">
+    <h3>3. International Collaborations</h3>
+    <p class="content-text">
+        Chandigarh University has established collaborations and partnerships with renowned international universities and institutions. These collaborations provide students with opportunities for exchange programs, joint research initiatives, and global exposure.
+    </p>
+</div>
+<div class="content-section">
+    <h3>4. Placements</h3>
+    <p class="content-text">
+        Chandigarh University places a significant emphasis on providing students with opportunities for internships and placements. The university claims to have a robust placement record, with a high percentage of students securing jobs in reputed companies.
+    </p>
+</div>
+<div class="content-section">
+    <h3>5. Cultural and Extracurricular Activities</h3>
+    <p class="content-text">
+        The university promotes a holistic development approach, encouraging students to participate in cultural events, sports, and other extracurricular activities. This helps in shaping well-rounded individuals.
+    </p>
+</div>
+<div class="content-section">
+    <h3>6. Accreditations and Recognitions</h3>
+    <p class="content-text">
+        Chandigarh University is recognized by the University Grants Commission (UGC) and has received accreditations from various accreditation bodies. It follows quality assurance practices to maintain educational standards.
+    </p>
+</div>
+<div class="content-section">
+    <h3>7. Entrepreneurship Development</h3>
+    <p class="content-text">
+        The university supports entrepreneurship and innovation, fostering an environment where students can explore their entrepreneurial skills. Incubation centers and startup support systems are in place to encourage students to turn their ideas into viable businesses.
+    </p>
+</div>
+<div class="content-section">
+    <h3>8. Social Initiatives</h3>
+    <p class="content-text">
+        Chandigarh University is involved in various social initiatives and community development programs. This includes activities related to social responsibility, environmental sustainability, and community outreach.
+    </p>
+</div>
+</body>
+</html>
